@@ -1,0 +1,33 @@
+/* For overlay text shadow and responsiveness */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .overlay {
+    padding: 1rem;
+  }
+}
+/* Example: Adjust font size for smaller screens */
+@media(max-width: 576px) {
+  h1.display-4 {
+    font-size: 2rem;
+  }
+  /* Other tweaks */
+}
+
+/* Smooth hover effects for buttons */
+button, .btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Ensure images are cropped consistently and responsive */
+img {
+  object-fit: cover;
+}
